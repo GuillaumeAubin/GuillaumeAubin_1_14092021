@@ -40,3 +40,105 @@ h1{
 .gras{
     font-weight: bold;
 }
+
+.barreRecherche{
+    display: flex;
+}
+
+.bordureRecherche{
+    width: 400px;
+    border-radius: 15px;
+    border: 0.5px solid #F2F2F2;
+}
+
+.recherche{
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding-left: 20px;
+}
+
+.tailleIcone {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px 0 0 15px;
+}
+
+.fondGris {
+    background-color: #F2F2F2;
+}
+
+.fondBleuFonce{
+    background-color: #0065FC;
+}
+
+.fondBleuClair{
+    background-color: #DEEBFF;
+}
+
+.flexCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.bordureNone {
+    border: none;
+}
+
+.bouttonRecherche{
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+}
+
+.filtres{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+.filtreIcone{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.bordureFiltre{
+    padding-right: 20px;
+    border-radius: 50px;
+    box-sizing: content-box;
+    border: 2px solid #F2F2F2;
+    border-left: none;
+    height: 48px;
+    margin-left: 25px;
+}
+
+.iTexte{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.iRond{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #F2F2F2;
+    margin-right: 10px;
+}
+
+.iRond i{
+    color: #0065FC;
+    font-size: 12px;
+}
