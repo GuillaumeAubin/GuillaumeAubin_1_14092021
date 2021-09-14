@@ -1,8 +1,6 @@
 body {
     font-family: Raleway, Arial, sans-serif;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 30px;
+    margin: 40px;
     }
 
 header {
@@ -141,4 +139,67 @@ h1{
 .iRond i{
     color: #0065FC;
     font-size: 12px;
+}
+
+
+.hebergements{
+    display: flex;
+    margin-top: 20px;
+}
+
+.grille75{
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-right: 30px;
+    padding: 20px 20px 20px 40px;
+}
+
+.grille25{
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    padding: 20px 40px 20px 40px;
+}
+
+h2{
+    font-size: 1.4em;
+}
+
+.grille3{
+    display: flex;
+}
+
+.vignetteHotel{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 35px #dadada;
+    padding: 5px;
+    padding-bottom: 8px;
+    margin: 0px 20px 20px 0px;
+}
+
+.hebergements img{
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.texteVignette{
+    margin-top: -12px;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.texteVignette p{
+    margin-top: -14px;
+    margin-bottom: 3px;
+}
+
+.etoileBleue{
+    color: #0065FC;
+}
+
+.etoileGrise{
+    color: #dadada;
 }
