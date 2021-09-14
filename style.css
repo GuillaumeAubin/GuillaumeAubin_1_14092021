@@ -1,0 +1,42 @@
+body {
+    font-family: Raleway, Arial, sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav li{
+    margin-right: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #0065FC;
+    }
+
+nav a:hover{
+    border-top: 1px solid #0065FC;
+}
+
+h1{
+    padding-top: 10px;
+    font-size: 1.4em;
+}
+
+#slogan{
+    margin-top: -10px;
+}
+
+.gras{
+    font-weight: bold;
+}
