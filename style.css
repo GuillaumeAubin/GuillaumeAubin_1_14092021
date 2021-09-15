@@ -383,3 +383,210 @@ footer li{
 
 /*Media Queries 800px*/
 
+@media (min-width: 801px) {
+    #supprimerOrdi {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        margin: 30px;
+    }
+
+    header{
+        font-size: 1.3em;
+    }
+
+    #inscription{
+        font-weight: bold;
+    }
+
+    .sousheader{
+        font-size: 1.3em;
+    }
+
+    .bordureRecherche{
+        margin-top: 40px;
+        width: 420px;
+    }
+
+    .recherche{
+        height: 65px;
+        width: 290px;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    
+    .tailleIcone {
+        height: 65px;
+        width: 65px;
+    }
+    
+    .bouttonRecherche{
+        height: 65px;
+        width: 65px;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    #supprimerMobile{
+        display: none;
+    }
+
+
+
+
+
+    
+    
+    .filtres{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 30px;
+        font-size: 1.1em;
+    }
+    
+    .filtreIcone{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        color: #0065FC;
+        background-color: #DEEBFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    
+    .bordureFiltre{
+        padding-right: 20px;
+        border-radius: 50px;
+        box-sizing: content-box;
+        border: 2px solid #F2F2F2;
+        border-left: none;
+        height: 48px;
+        margin-left: 25px;
+        cursor: pointer;
+    }
+    
+    .iTexte{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .iRond{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 2px solid #F2F2F2;
+        margin-right: 10px;
+    }
+    
+    .iRond i{
+        color: #0065FC;
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+    .hebergements{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .grille25{
+        border-radius: 0;
+        margin: 0 -30px 0 -30px;
+        padding: 25px 30px 20px 30px;
+    }    
+    
+    .imageVignetteGauche{
+        min-width: 180px;
+        height: 200px;
+    }
+    .vignetteGauche{
+        max-height: 200px;
+    }
+
+    .texteVignette{
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+
+    .etoilesBas{
+        margin-top: 25px;
+        font-size: 0.9em;
+    }
+
+    .grille75{
+        border-radius: 0;
+        background-color: unset;
+        margin-right: 0;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .grille3{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .imgHebergements{
+        height: 160px;
+    }
+
+    #afficherPlus{
+        font-size: 1.6em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    .galerieActivite{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .vignetteActivite{
+        width: auto;
+    }
+
+    .imgActivite{
+        padding-top: 200px;
+    }
+
+    #pomegues{
+        padding-top: 200px;
+    }
+
+    #frioul{
+        padding-top: 200px;
+    }
+
+    #notreDame{
+        padding-top: 200px;
+    }
+
+    #longchamp{
+        padding-top: 200px;
+    }
+
+    .vignetteActivite p{
+        font-size: 1.4em;
+    }
+
+    footer a{
+        font-size: 1.4em;
+    }
+
+    .footFlex{
+        flex-direction: column;
+    }
+  }
