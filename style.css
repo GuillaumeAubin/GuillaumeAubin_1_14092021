@@ -233,3 +233,94 @@ h2{
     margin-top: 50px;
 }
 
+.galerieActivite{
+    display: flex;
+    justify-content: space-between;
+    height: 460px;
+}
+
+#activite{
+    margin-bottom: 50px;
+}
+
+#activite h2{
+    margin-top: 50px;
+}
+
+.vignetteActivite{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 35px #dadada;
+    width: 280px;
+}
+
+.vignetteMini{
+    padding-bottom: 0.1px;
+}
+
+.imgActivite{
+    border-radius: 20px 20px 0 0;
+    padding-top: 410px;
+    background-size: cover;
+    background-position: center;
+}
+
+.vignetteActivite p{
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#vieuxPort{
+    background-image: url('images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+}
+
+#pomegues{
+    background-image: url('images/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    padding-top: 210px;
+}
+
+#frioul{
+    background-image: url('images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    padding-top: 120px;
+    margin-top: 30px;
+}
+
+#calanques{
+    background-image: url('images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+}
+
+#notreDame{
+    background-image: url('images/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+    padding-top: 160px;
+}
+
+#longchamp{
+    background-image: url('images/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+    padding-top: 170px;
+    margin-top: 30px;
+}
+
+footer{
+    padding: 20px 40px 40px 40px;
+    margin: 0 -40px -40px -40px;
+}
+
+.footFlex{
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer li{
+    margin-bottom: 12px;
+}
