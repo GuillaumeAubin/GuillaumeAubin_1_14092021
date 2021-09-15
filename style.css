@@ -151,13 +151,13 @@ h1{
     border-radius: 20px;
     background-color: #F2F2F2;
     margin-right: 30px;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 10px 40px;
 }
 
 .grille25{
     border-radius: 20px;
     background-color: #F2F2F2;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px 10px 40px;
 }
 
 h2{
@@ -174,26 +174,26 @@ h2{
     box-shadow: 0px 0px 35px #dadada;
     padding: 5px;
     padding-bottom: 8px;
-    margin: 0px 20px 20px 0px;
+    margin: 0px 30px 30px 0px;
 }
 
 .hebergements img{
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 125px;
     background-size: cover;
     background-position: center;
     border-radius: 15px 15px 0 0;
 }
 
 .texteVignette{
-    margin-top: -12px;
+    margin-top: -10px;
     margin-left: 10px;
     font-size: 0.9em;
 }
 
 .texteVignette p{
-    margin-top: -14px;
-    margin-bottom: 3px;
+    margin-top: -12px;
+    margin-bottom: 8px;
 }
 
 .etoileBleue{
@@ -203,3 +203,33 @@ h2{
 .etoileGrise{
     color: #dadada;
 }
+
+#titreIcone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-chart-line{
+    font-size: 1.5em;
+}
+
+.grille25 img{
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.vignetteGauche{
+    display: flex;
+    padding-bottom: 5px;
+    margin-right: 0px;
+    max-height: 140px;
+}
+
+.etoilesBas{
+    margin-top: 50px;
+}
+
