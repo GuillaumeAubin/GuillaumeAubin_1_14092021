@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <title>Reservia</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Site Réservia, création du site Réservia d'après les maquettes fournies pour le projet 2 OpenClassrooms">
         <link rel="stylesheet" href="style.css"/>
         <script src="https://kit.fontawesome.com/bf2091fcc8.js" crossorigin="anonymous"></script>
     </head>
@@ -11,11 +12,13 @@
 
         <!--header-->
         <header>
+            <a href="index.html">
             <img src="images/Reservia.svg" alt="logo Reservia" width=120px/>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="Hébergements">Hébergements</a></li>
-                    <li><a href="Activités">Activités</a></li>
+                    <li><a href="#Hébergements">Hébergements</a></li>
+                    <li><a href="#Activités">Activités</a></li>
                     <li><a href="#">S'inscrire</a></li>
             </ul>
             </nav>
@@ -32,8 +35,10 @@
                 <div>
                     <input class="recherche flexCentre bordureNone" type="search" value="Marseille, France" />
                 </div>
-                <div class="gras fondBleuFonce flexCentre bouttonRecherche">Rechercher
+                <a href="#">
+                    <div class="gras fondBleuFonce flexCentre bouttonRecherche">Rechercher
                 </div>
+            </a>
             </div>
             <div class="gras filtres flexCentre">
                 Filtres
@@ -74,12 +79,13 @@
         </section>
 
         <!--section hébergements-->
-        <section class="hebergements">
+        <section id="Hébergements" class="hebergements">
             <div class="grille75">
                 <h2>Hébergements à Marseille</h2>
                 <div class="grille3">
                     <div class="vignetteHotel">
-                        <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                        <div class="imgHebergements" id="cannebière">
+                        </div>
                         <div class="texteVignette">
                             <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de <strong>25€</strong></p>
@@ -91,7 +97,8 @@
                         </div>
                     </div>
                     <div class="vignetteHotel">
-                        <img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                        <div class="imgHebergements" id="hotelPort">
+                        </div>
                         <div class="texteVignette">
                             <h3>Hôtel du port</h3>
                             <p>Nuit à partir de 52€</p>
@@ -103,7 +110,8 @@
                         </div>
                     </div>
                     <div class="vignetteHotel">
-                        <img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
+                        <div class="imgHebergements" id="hotelMouettes">
+                        </div>
                         <div class="texteVignette">
                             <h3>Hôtel Les mouettes</h3>
                             <p>Nuit à partir de 76€</p>
@@ -117,7 +125,8 @@
                 </div>
                 <div class="grille3">
                     <div class="vignetteHotel">
-                        <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                        <div class="imgHebergements" id="hotelMer">
+                        </div>
                         <div class="texteVignette">
                             <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de 46€</p>
@@ -129,7 +138,8 @@
                         </div>
                     </div>
                     <div class="vignetteHotel">
-                        <img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier">
+                        <div class="imgHebergements" id="aubergePanier">
+                        </div>
                         <div class="texteVignette">
                             <h3>Auberge le Panier</h3>
                             <p>Nuit à partir de <strong>23€</strong></p>
@@ -141,7 +151,8 @@
                         </div>
                     </div>
                     <div class="vignetteHotel">
-                        <img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+                        <div class="imgHebergements" id="hotelAmina">
+                        </div>
                         <div class="texteVignette">
                             <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de 96€</p>
@@ -161,7 +172,8 @@
                     <i class="fas fa-chart-line"></i>
                 </div>
                 <div class="vignetteHotel vignetteGauche">
-                        <img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                    <div class="imageVignetteGauche" id="soleilMatin">
+                    </div>
                     <div class="texteVignette">
                         <div>
                             <h3>Hôtel Le soleil du matin</h3>
@@ -177,7 +189,8 @@
                     </div>
                 </div>
                 <div class="vignetteHotel vignetteGauche">
-                    <img src="images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                    <div class="imageVignetteGauche" id="coeurEau">
+                    </div>
                     <div class="texteVignette">
                         <div>
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
@@ -193,7 +206,8 @@
                     </div>
                 </div>
                 <div class="vignetteHotel vignetteGauche">
-                    <img src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
+                    <div class="imageVignetteGauche" id="hotelBleuBlanc">
+                    </div>
                     <div class="texteVignette">
                         <div>
                             <h3>Hôtel Tout bleu et Blanc</h3>
@@ -212,7 +226,7 @@
         </section>
 
         <!--section activités-->
-        <section id="activite">
+        <section id="Activités">
             <h2>Activités à Marseille</h2>
             <div class="galerieActivite">
                 <div class="vignetteActivite">
