@@ -32,8 +32,10 @@ nav a{
 }
 
 nav a:hover{
-    padding-top: 55px;
-    border-top: 1px solid #0065FC;
+    padding-top: 52px;
+    border-top: 4px solid #0043a7;
+    color: #0043a7;
+    transition: 0.3s;
 }
 
 /*section recherche*/
@@ -110,6 +112,8 @@ h1{
     -ms-transform: scale(1.05); /* Internet Explorer 9 */
     -o-transform: scale(1.05); /* Opera */
     transform: scale(1.05);
+    box-shadow: 0px 0px 35px #2727278e;
+
 }
 
 .filtres{
@@ -148,6 +152,7 @@ h1{
     -ms-transform: scale(1.05); /* Internet Explorer 9 */
     -o-transform: scale(1.05); /* Opera */
     transform: scale(1.05);
+    box-shadow: 0px 0px 35px #dadada;
 }
 
 .iTexte{
@@ -175,6 +180,7 @@ h1{
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
+    width: 100%;
 }
 
 .grille75{
@@ -182,12 +188,14 @@ h1{
     background-color: #F2F2F2;
     margin-right: 30px;
     padding: 20px 40px 10px 40px;
+    width: 75%;
 }
 
 .grille25{
     border-radius: 20px;
     background-color: #F2F2F2;
     padding: 20px 40px 10px 40px;
+    width: 25%;
 }
 
 h2{
@@ -208,6 +216,7 @@ h2{
     padding-bottom: 8px;
     margin-bottom: 30px;
     cursor: pointer;
+    width: 33%;
 }
 
 .vignetteHotel:hover{
@@ -217,6 +226,7 @@ h2{
     -ms-transform: scale(1.03); /* Internet Explorer 9 */
     -o-transform: scale(1.03); /* Opera */
     transform: scale(1.03);
+    box-shadow: 0px 0px 35px #2727278e;
 }
 
 .afficherPlus{
@@ -224,7 +234,6 @@ h2{
 }
 
 .imgHebergements{
-    min-width: 250px;
     height: 125px;
     background-size: cover;
     background-position: center;
@@ -286,6 +295,7 @@ h2{
 
 .imageVignetteGauche{
     min-width: 140px;
+    width: auto;
     height: 140px;
     background-size: cover;
     background-position: center;
@@ -298,6 +308,7 @@ h2{
     margin-right: 0px;
     max-height: 140px;
     min-width: 305px;
+    width: auto;
 }
 
 #soleilMatin{
@@ -323,6 +334,8 @@ h2{
     justify-content: space-between;
     height: 460px;
     gap: 30px;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 #Activités{
@@ -337,21 +350,32 @@ h2{
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 0px 35px #dadada;
-    width: 350px;
-    min-width: 250px;
+    width: 25%;
+    min-width: 150px;
     cursor: pointer;
 }
 
-.vignetteActivite:hover{
+.vignetteActivite:hover, .vignetteMini:hover{
     transition: 0.1s ease-in-out;
     -webkit-transform: scale(1.03); /* Safari et Chrome */
     -moz-transform: scale(1.03); /* Firefox */
     -ms-transform: scale(1.03); /* Internet Explorer 9 */
     -o-transform: scale(1.03); /* Opera */
     transform: scale(1.03);
+    box-shadow: 0px 0px 35px #2727278e;
+}
+
+.vignetteActiviteDouble{
+    width: 25%;
+    min-width: 150px;
 }
 
 .vignetteMini{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 35px #dadada;
+    min-width: 150px;
+    cursor: pointer;
     padding-bottom: 0.1px;
 }
 
@@ -362,7 +386,7 @@ h2{
     background-position: center;
 }
 
-.vignetteActivite p{
+.galerieActivite p{
     font-weight: bold;
     margin-left: 20px;
 }
@@ -425,15 +449,16 @@ footer li{
 
 /*Media Queries 800px*/
 
-@media (min-width: 801px) {
+@media all and (min-device-width: 481px) {
     #supprimerOrdi {
         display: none;
     }
 }
 
-@media (max-width: 800px) {
+@media all and (max-device-width: 480px) {
     body {
-        margin: 30px;
+        width: 100%;
+        margin: 20px;
     }
 
     header{
@@ -473,7 +498,7 @@ footer li{
         border-bottom: 4px solid #f2f2f2;
         margin-left: 0;
         width: 50%;
-        padding: 20px 100px 20px 100px;
+        padding: 20px 40px 20px 40px;
     }
 
     header ul li a:hover {
@@ -495,12 +520,12 @@ footer li{
 
     .bordureRecherche{
         margin-top: 40px;
-        width: 420px;
+        width: 100%;
     }
 
     .recherche{
         height: 65px;
-        width: 290px;
+        width: 100%;
         font-size: 25px;
         padding-left: 20px;
     }
@@ -527,7 +552,7 @@ footer li{
     }
     
     #retourLigne{
-        width: 800px;
+        width: 200px;
     }
 
     .filtreIcone{
@@ -564,12 +589,14 @@ footer li{
     .hebergements{
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
     }
 
     .grille25{
         border-radius: 0;
-        margin: 0 -30px 0 -30px;
-        padding: 25px 30px 20px 30px;
+        width: 100%;
+        margin-left: -20px;
+        padding: 20px 20px 10px 20px;
     }    
     
     .imageVignetteGauche{
@@ -596,11 +623,19 @@ footer li{
         margin-right: 0;
         padding: 0;
         margin-top: 30px;
+        width: 100%;
     }
 
     .grille3{
         flex-direction: column;
         gap: 0;
+    }
+
+    .vignetteHotel{
+        padding: 5px;
+        padding-bottom: 8px;
+        margin-bottom: 30px;
+        width: 100%;
     }
 
     .imgHebergements{
@@ -618,10 +653,15 @@ footer li{
     .galerieActivite{
         flex-direction: column;
         height: auto;
+        margin-bottom: 20px;
     }
 
     .vignetteActivite{
         width: auto;
+    }
+
+    .vignetteActiviteDouble{
+        width: 100%;
     }
 
     .imgActivite{
