@@ -12,21 +12,28 @@
 
         <!--header-->
         <header>
-            <a href="index.html">
-            <img src="images/Reservia.svg" alt="logo Reservia" width=120px/>
-            </a>
+            <div id="headerUn">
+                <div>
+                    <a href="index.html">
+                    <img src="images/Reservia.svg" alt="logo Reservia"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" id="supprimerOrdi" class="inscription">S'inscrire</a>
+                </div>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#Hébergements">Hébergements</a></li>
                     <li><a href="#Activités">Activités</a></li>
-                    <li id="inscription"><a href="#">S'inscrire</a></li>
-            </ul>
+                    <li id="supprimerMobile"><a href="#">S'inscrire</a></li>
+                </ul>
             </nav>
         </header>
 
         <!--section recherche-->
         <section class="sousheader">
-            <h1>Trouvez votre hébergemement pour des vacances de rêve</h1>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p id="slogan">En plein centre-ville ou en pleine nature</p>
             <div class="bordureRecherche barreRecherche">
                 <div class="fondGris flexCentre tailleIcone">
@@ -42,8 +49,8 @@
                 </div>
             </a>
             </div>
-            <div class="gras filtres flexCentre">
-                Filtres
+            <div class="gras flexCentre filtres">
+                <div id="retourLigne">Filtres</div>
                 <div class="flexCentre bordureFiltre">
                     <div class="filtreIcone">
                         <i class="fas fa-money-bill-wave"></i>
@@ -166,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="gras" id="afficherPlus">Afficher plus</p>
+                <p class="gras afficherPlus">Afficher plus</p>
             </div>
             <div class="grille25">
                 <div id="titreIcone">
