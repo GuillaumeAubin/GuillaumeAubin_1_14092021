@@ -227,6 +227,7 @@ h2{
     -o-transform: scale(1.03); /* Opera */
     transform: scale(1.03);
     box-shadow: 0px 0px 35px #2727278e;
+    background-color: #DEEBFF;
 }
 
 .afficherPlus{
@@ -268,11 +269,19 @@ h2{
     margin-top: -10px;
     margin-left: 10px;
     font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    width: 60%;
 }
 
 .texteVignette p{
     margin-top: -12px;
     margin-bottom: 8px;
+}
+
+.texteTexte{
+    margin-bottom: auto;
 }
 
 .etoileBleue{
@@ -294,8 +303,7 @@ h2{
 }
 
 .imageVignetteGauche{
-    min-width: 140px;
-    width: auto;
+    width: 40%;
     height: 140px;
     background-size: cover;
     background-position: center;
@@ -307,7 +315,6 @@ h2{
     padding-bottom: 5px;
     margin-right: 0px;
     max-height: 140px;
-    min-width: 305px;
     width: auto;
 }
 
@@ -321,10 +328,6 @@ h2{
 
 #hotelBleuBlanc{
     background-image: url('images/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
-}
-
-.etoilesBas{
-    margin-top: 50px;
 }
 
 /*section activités*/
@@ -449,16 +452,18 @@ footer li{
 
 /*Media Queries 800px*/
 
-@media all and (min-device-width: 481px) {
+@media all and (min-width: 1051px) {
     #supprimerOrdi {
         display: none;
     }
 }
 
-@media all and (max-device-width: 480px) {
+
+
+@media all and (max-width: 1050px) {
     body {
-        width: 100%;
-        margin: 20px;
+        width: 93%;
+        margin: 15px;
     }
 
     header{
@@ -485,20 +490,26 @@ footer li{
     nav {
         display: flex;
         justify-content: space-around;
-        align-content: center;
         width: 100%;
-        margin-top: 2px;
+        padding: 0 -20px 0 -20px;
     }
 
     nav a{
         color: black;
     }
 
+    nav ul{
+        padding: 0;
+        width: 100%;
+    }
+
     nav ul li{
         border-bottom: 4px solid #f2f2f2;
-        margin-left: 0;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
         width: 50%;
-        padding: 20px 40px 20px 40px;
+        text-align: center;
     }
 
     header ul li a:hover {
@@ -521,12 +532,13 @@ footer li{
     .bordureRecherche{
         margin-top: 40px;
         width: 100%;
+        max-width: 485px;
     }
 
     .recherche{
         height: 65px;
         width: 100%;
-        font-size: 25px;
+        font-size: 23px;
         padding-left: 20px;
     }
     
@@ -595,16 +607,16 @@ footer li{
     .grille25{
         border-radius: 0;
         width: 100%;
-        margin-left: -20px;
-        padding: 20px 20px 10px 20px;
+        margin: -15px;
+        padding: 12px;
     }    
     
     .imageVignetteGauche{
-        min-width: 180px;
-        height: 200px;
+        min-width: 150px;
+        height: 170px;
     }
     .vignetteGauche{
-        max-height: 200px;
+        max-height: 167px;
     }
 
     .texteVignette{
@@ -632,10 +644,9 @@ footer li{
     }
 
     .vignetteHotel{
-        padding: 5px;
         padding-bottom: 8px;
         margin-bottom: 30px;
-        width: 100%;
+        width: 96%;
     }
 
     .imgHebergements{
@@ -688,8 +699,14 @@ footer li{
         font-size: 1.4em;
     }
 
+    footer{
+        margin: -11px;
+        padding: 12px;
+    }
+
     footer a{
         font-size: 1.4em;
+
     }
 
     .footFlex{
