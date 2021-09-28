@@ -1,3 +1,4 @@
+/*Police utilisée Raleway*/
 body {
     font-family: Raleway, Arial, sans-serif;
     margin: 40px;
@@ -13,6 +14,8 @@ header {
 header img{
     width: 120px;
 }
+
+/*Barre de navigation avec/sans s'inscrire*/
 
 nav ul{
     list-style: none;
@@ -30,6 +33,8 @@ a{
 nav a{
     color: #0065FC;
 }
+
+/*Effet hover sur barre de navigation*/
 
 nav a:hover{
     padding-top: 52px;
@@ -53,6 +58,8 @@ h1{
     font-weight: bold;
 }
 
+/*Barre de recherche avec/sans loupe et avec/sans "rechercher*/
+
 .barreRecherche{
     display: flex;
 }
@@ -71,6 +78,8 @@ h1{
     color: black;
     padding-left: 20px;
 }
+
+/*Icones flex*/
 
 .tailleIcone {
     height: 50px;
@@ -105,6 +114,8 @@ h1{
     color: white;
     border-radius: 0 15px 15px 0;
 }
+
+/*hover recherche*/
 
 .bouttonRecherche:hover{
     transform: scale(1.05);
@@ -142,9 +153,13 @@ h1{
     cursor: pointer;
 }
 
+/*hover filtre*/
+
 .bordureFiltre:hover{
     box-shadow: 0px 0px 35px #dadada;
 }
+
+/*petit i en rond avec texte*/
 
 .iTexte{
     display: flex;
@@ -174,6 +189,8 @@ h1{
     width: 100%;
 }
 
+/*grille 75 car le bloque représente 75% de la largeur*/
+
 .grille75{
     border-radius: 20px;
     background-color: #F2F2F2;
@@ -181,6 +198,8 @@ h1{
     padding: 20px 40px 10px 40px;
     width: 75%;
 }
+
+/*grille 25 car le bloque représente 25% de la largeur*/
 
 .grille25{
     border-radius: 20px;
@@ -433,7 +452,7 @@ footer li{
     margin-bottom: 12px;
 }
 
-/*Media Queries 800px*/
+/*Media Queries 1050px*/
 
 @media all and (min-width: 1051px) {
     #supprimerOrdi {
