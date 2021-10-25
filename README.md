@@ -26,6 +26,6 @@ Le rendu final hébergé sur GitHub : [Réservia](https://guillaumeaubin.github.
 
 ***
 
-#### Travail réalisé
+### Travail réalisé
 
 Veuillez me contacter pour découvrir l'intégralité du travail réalisé.
